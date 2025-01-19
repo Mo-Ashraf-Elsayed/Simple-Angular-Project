@@ -78,4 +78,4 @@ This is a simple yet interactive Angular project that demonstrates routing, lazy
 
 ### [LinkedIn](https://www.linkedin.com/in/mohammed-ashraf0/)
 
-### [Live Demo]()
+### [Live Demo](https://simple-angular-project.vercel.app/#/home)
