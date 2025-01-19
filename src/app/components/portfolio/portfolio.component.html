@@ -1,0 +1,35 @@
+<section class="mt-5 pt-5 pb-3">
+    <div class="container-sm headingColor text-center">
+        <h1 class="fw-bold">PORTFOLIO COMPONENT</h1>
+        <div class="star">
+            <div class="after"></div>
+            <i class="fa-solid fa-star mx-3"></i>
+            <div class="after"></div>
+        </div>
+        <div class="row gy-5 gx-4 g-sm-5 py-3">
+            @for(img of arrImgs;track $index){
+            <div class="col-md-6 col-lg-4">
+                <div class="innerImg position-relative">
+                    <img [src]="img" alt>
+                    <div
+                        class="layer" (click)="displayImg($index)">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    <div [class.d-none]="addDisplayNone" (click)="hideImg()"
+        class="displayPhotos d-flex align-items-center justify-content-evenly position-fixed top-0 bottom-0 start-0 end-0 bg-primary bg-opacity-25 z-3">
+        <div
+            class="photo container-sm d-flex align-items-center justify-content-center">
+            <i class="fa-regular fa-circle-left fs-1 pointer"
+                (click)="stopPropagation($event)" (click)="previous()"></i>
+            <img [src]="imgBinding" alt
+                (click)="stopPropagation($event)">
+            <i class="fa-regular fa-circle-right fs-1 pointer"
+                (click)="stopPropagation($event)" (click)="next()"></i>
+        </div>
+    </div>
+</section>

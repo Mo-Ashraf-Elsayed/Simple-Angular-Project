@@ -19,7 +19,6 @@ The project includes six main components:
 - **Lazy Loading**: All components except for the navbar and footer are lazy-loaded via Angular's routing mechanism.
 - **Routing**: Routing is set up so that the user can navigate between components through the links in the navbar.
 
-
 ## Routing and Lazy Loading
 
 This Angular project uses lazy loading to load the components (Home, About, Portfolio, and Contact) only when they are accessed via the navbar links.
@@ -28,33 +27,24 @@ This Angular project uses lazy loading to load the components (Home, About, Port
 
 ```typescript
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent, title: 'Home' },
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "home", component: HomeComponent, title: "Home" },
   {
-    path: 'about',
-    loadComponent: () =>
-      import('./components/about/about.component').then(
-        (c) => c.AboutComponent
-      ),
-    title: 'About',
+    path: "about",
+    loadComponent: () => import("./components/about/about.component").then((c) => c.AboutComponent),
+    title: "About",
   },
   {
-    path: 'portfolio',
-    loadComponent: () =>
-      import('./components/portfolio/portfolio.component').then(
-        (c) => c.PortfolioComponent
-      ),
-    title: 'Portfolio',
+    path: "portfolio",
+    loadComponent: () => import("./components/portfolio/portfolio.component").then((c) => c.PortfolioComponent),
+    title: "Portfolio",
   },
   {
-    path: 'contact',
-    loadComponent: () =>
-      import('./components/contact/contact.component').then(
-        (c) => c.ContactComponent
-      ),
-    title: 'Contact',
+    path: "contact",
+    loadComponent: () => import("./components/contact/contact.component").then((c) => c.ContactComponent),
+    title: "Contact",
   },
-  { path: '**', component: NotFoundComponent, title: '404' },
+  { path: "**", component: NotFoundComponent, title: "404" },
 ];
 ```
 
@@ -63,12 +53,12 @@ export const routes: Routes = [
 - **Navbar**: The navbar adjusts its height on scroll:
   - Decreases height when scrolling down.
   - Returns to its original height when scrolling to the top of the page.
-  
 - **Home**: This is the landing page that appears when the user navigates to the root URL.
 
 - **About**: This component contains placeholder text ("Lorem ipsum") for the About page.
 
 - **Portfolio**:
+
   - Displays a gallery of images as cards.
   - When an image is clicked, it is displayed in a full-screen overlay.
   - The overlay has navigation buttons to flip through images.
@@ -87,4 +77,5 @@ export const routes: Routes = [
 This is a simple yet interactive Angular project that demonstrates routing, lazy loading, and a variety of UI interactions, such as dynamic label display and gallery image viewing.
 
 ### [LinkedIn](https://www.linkedin.com/in/mohammed-ashraf0/)
+
 ### [Live Demo]()

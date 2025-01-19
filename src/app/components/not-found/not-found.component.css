@@ -1,0 +1,59 @@
+section {
+  background-color: var(--mainColor);
+  margin-top: 5rem;
+  padding: 7rem 0;
+}
+.mainbox {
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.err {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+}
+.far {
+  font-size: 8.5rem;
+  color: #ffffff;
+}
+.err2 {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+}
+.err1 {
+  display: none;
+  font-size: 8.5rem;
+
+  color: #ffffff;
+}
+@media screen and (max-width: 350px) {
+  .far {
+    display: none;
+  }
+  .err1 {
+    display: block;
+  }
+}
+.msg {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  width: 75%;
+  line-height: 2;
+  text-align: center;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+a:hover {
+  background-color: var(--mainColor2);
+}

@@ -1,0 +1,56 @@
+.mt-5 {
+  margin-top: 5rem !important;
+}
+h1 {
+  color: var(--mainColor2);
+}
+.star {
+  color: var(--mainColor2);
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.star .after {
+  background-color: var(--mainColor2);
+}
+.input {
+  width: 50%;
+  margin: 1.2rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+}
+
+.input input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0px 7px 0px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+.inputTitle {
+  text-align: start;
+  color: var(--mainColor);
+  padding: 0 0.7rem;
+  transition: all 0.8s;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+}
+button {
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.clickSubmin {
+  padding: 0.3rem 0.5rem;
+}

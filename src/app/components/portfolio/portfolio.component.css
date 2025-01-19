@@ -1,0 +1,24 @@
+.mt-5 {
+  margin-top: 5rem !important;
+}
+.headingColor {
+  color: var(--mainColor2);
+}
+.star .after {
+  background-color: var(--mainColor2);
+}
+.innerImg img {
+  width: 100%;
+  border-radius: 10px;
+}
+.photo img {
+  width: 600px;
+}
+@media screen and (max-width: 685px) {
+  .photo img {
+    width: 88%;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
