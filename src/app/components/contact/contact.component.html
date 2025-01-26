@@ -8,24 +8,31 @@
         </div>
         <div class="form">
             <div class="input">
-                <p [class.top-0]="title1" class="inputTitle m-0">userName :</p>
-                <input type="text" (input)="showInputTitle1()"
+                <label for="userName" [class.top-0]="userName"
+                    class="inputTitle m-0">userName
+                    :</label>
+                <input id="userName" type="text" [(ngModel)]="userName"
                     placeholder="userName">
             </div>
             <div class="input">
-                <p [class.top-0]="title2" class="inputTitle m-0">userAge :</p>
-                <input type="number" (input)="showInputTitle2()"
+                <label for="userAge" [class.top-0]="userAge"
+                    class="inputTitle m-0">userAge
+                    :</label>
+                <input id="userAge" type="number" [(ngModel)]="userAge"
                     placeholder="userAge">
             </div>
             <div class="input">
-                <p [class.top-0]="title3" class="inputTitle m-0">userEmail :</p>
-                <input type="email" (input)="showInputTitle3()"
+                <label for="userEmail" [class.top-0]="userEmail"
+                    class="inputTitle m-0">userEmail
+                    :</label>
+                <input id="userEmail" type="email" [(ngModel)]="userEmail"
                     placeholder="userEmail">
             </div>
             <div class="input">
-                <p [class.top-0]="title4" class="inputTitle m-0">userPassword
-                    :</p>
-                <input type="password" (input)="showInputTitle4()"
+                <label for="password" [class.top-0]="password"
+                    class="inputTitle m-0">userPassword
+                    :</label>
+                <input id="password" type="password" [(ngModel)]="password"
                     placeholder="userPassword">
             </div>
             <div class="input">
