@@ -21,7 +21,7 @@ The project includes six main components:
 
 ## Routing and Lazy Loading
 
-This Angular project uses lazy loading to load the components (Home, About, Portfolio, and Contact) only when they are accessed via the navbar links.
+This Angular project uses lazy loading to load the components (About, Portfolio, and Contact) only when they are accessed via the navbar links.
 
 ### Routing Configuration
 
